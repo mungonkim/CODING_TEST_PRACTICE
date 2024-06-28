@@ -1,4 +1,4 @@
-def solution(numbers, direction):
+'''def solution(numbers, direction):
     answer = []
 
     if direction == "right":
@@ -15,4 +15,15 @@ def solution(numbers, direction):
                 answer.append(numbers[0])
                 break
             answer.append(numbers[i])
-    return answer
+    return answer '''
+
+from collections import deque
+
+def solution(numbers, direction):
+    numbers = deque(numbers)
+    if direction == 'right':
+        numbers.rotate(1)
+    else:
+        numbers.rotate(-1)
+    
+    return list(numbers)
