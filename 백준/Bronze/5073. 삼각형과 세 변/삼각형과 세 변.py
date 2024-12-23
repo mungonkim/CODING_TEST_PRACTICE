@@ -1,13 +1,14 @@
 while True:
-    line = list(map(int, input().split()))
+    A, B, C = list(map(int, input().split()))
 
-    if line[0] == 0 and line[1] == 0 and line[2] == 0:
+    if A == 0 and B == 0 and C == 0:
         break
-    elif max(line) >= sum(line) - max(line):
+    elif max((A, B, C)) >= sum((A, B, C)) - max((A, B, C)):
         print('Invalid')
-    elif line[0] == line[1] == line[2]:
+    elif A == B == C:
         print('Equilateral')
-    elif (line[0] == line[1] != line[2]) or (line[1] == line[2] != line[0]) or (line[0] == line[2] != line[1]) :
+    elif (A == B != C) or (B == C != A) or (A == C != B) :
         print('Isosceles')
     else:
         print('Scalene')
+    
