@@ -1,0 +1,6 @@
+print(f"{'SHIP NAME':15}{'CLASS':15}{'DEPLOYMENT':11}{'IN SERVICE':10}")
+print(f"{'N2 Bomber':15}{'Heavy Fighter':15}{'Limited':11}{'21':10}")
+print(f"{'J-Type 327':15}{'Light Combat':15}{'Unlimited':11}{'1':10}")
+print(f"{'NX Cruiser':15}{'Medium Fighter':15}{'Limited':11}{'18':10}")
+print(f"{'N1 Starfighter':15}{'Medium Fighter':15}{'Unlimited':11}{'25':10}")
+print(f"{'Royal Cruiser':15}{'Light Combat':15}{'Limited':11}{'4':10}")
