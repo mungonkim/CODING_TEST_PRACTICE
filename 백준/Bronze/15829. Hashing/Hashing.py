@@ -4,6 +4,7 @@ input = sys.stdin.readline
 n = int(input())
 ch = input().strip()
 result = 0
+M = 1234567891
 
 alph_dic = {
  'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6,
@@ -14,7 +15,7 @@ alph_dic = {
 }
 
 for i in range(len(ch)):
-    result += (alph_dic[ch[i]] * pow(31, i))
+    result += (alph_dic[ch[i]] * pow(31, i, M))
     
 
 print(result)
